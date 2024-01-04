@@ -78,6 +78,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
+.custom-line {
+    background-color: #927463;
+    height: 5px;
+	margin: 0 auto;
+    width: 100%; /* This makes the line stretch the full width of its container */
+}
+
 /* Navigation */
 .navbar .navbar-nav {
 	display: inline-block;
@@ -165,6 +172,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 /* Header Section */
 .intro {
+	/* TEMP */
+	background: url(../img/main.JPG) center center no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* TEMP */
 	position: relative;
 	display: table;
 	width: 100%;
@@ -338,7 +351,9 @@ header .intro-text {
 	font-weight: 400;
 	color: #DBD5C9;
 	margin-top: -36px;
-}
+} 
+
+
 /* Gallery Section */
 #gallery {
 	padding: 0;
