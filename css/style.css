@@ -62,6 +62,7 @@ a:hover, a:focus {
 }
 ul, ol {
 	list-style: none;
+	text-align: center;
 }
 ul, ol {
 	padding: 0;
@@ -99,8 +100,8 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: rgb(71, 58, 56);
-	border-color: rgb(71, 58, 56);
+	background-color: rgb(55 45 43);
+	border-color: rgb(55 45 43);
 }
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
@@ -116,7 +117,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: #d43031;
 }
 .on {
-	background-color: rgb(71, 58, 56) !important;
+	background-color: rgb(55 45 43) !important;
 	padding: 0 !important;
 	padding: 10px 0 !important;
 }
@@ -279,7 +280,12 @@ header .intro-text {
 }
 #features p {
 	line-height: 24px;
-	margin: 15px 0 30px;
+	margin: 15px 0 10px;
+}
+#features .menu-item-price {
+    font-weight: 600;
+	font-size: 20px;
+    color: #DBD5C9;
 }
 /* About Section */
 #about {
@@ -310,6 +316,9 @@ header .intro-text {
 }
 #restaurant-menu img {
 	width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #restaurant-menu h3 {
 	padding: 10px 0;
@@ -334,26 +343,27 @@ header .intro-text {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
+	flex-direction: column-reverse;
     -moz-column-gap: 10px;
          column-gap: 10px;
 }
 
 #restaurant-menu .menu-item-name {
-
     font-weight: 400;
     font-size: 20px;
     color: #DBD5C9;
     margin-bottom: 10px;
+	margin-top: 20px;
 }
 #restaurant-menu .menu-item-description {
 	font-size: 15px;
-    width: 85%;
     min-width: 25ch;
     display: -webkit-box;
-  	-webkit-line-clamp: 3;
+  	-webkit-line-clamp: 5;
   	-webkit-box-orient: vertical;
     text-overflow: ellipsis;
   	overflow: hidden;
+	margin-bottom: 10px;
 }
 #restaurant-menu .menu-item-price {
     font-weight: 600;
@@ -369,6 +379,76 @@ header .intro-text {
     }
 }
 
+/* Drinks */
+
+#drinks-menu {
+	padding: 50px 0 60px 0;
+	background-color: #473A38;
+}
+#drinks-menu img {
+	/* width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+#drinks-menu h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+#drinks-menu .menu-section hr {
+	margin: 0 auto;
+}
+#drinks-menu .menu-section {
+	margin: 0 20px 80px;
+}
+#drinks-menu .menu-section-title {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color: #DBD5C9;
+	margin: 20px 0;
+	text-align: center;
+}
+#drinks-menu .menu-item {
+    margin: 45px 0;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+}
+
+#drinks-menu .menu-item-name {
+
+    font-weight: 400;
+    font-size: 20px;
+    color: #DBD5C9;
+    margin-bottom: 10px;
+}
+#drinks-menu .menu-item-description {
+	font-size: 15px;
+    width: 85%;
+    min-width: 25ch;
+    display: -webkit-box;
+  	-webkit-line-clamp: 3;
+  	-webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  	overflow: hidden;
+}
+#drinks-menu .menu-item-price {
+    font-weight: 600;
+    color: #DBD5C9;
+}
+#drinks-menu .menu-item-body {
+    font-size: 20px;
+    flex: 1 1 0%;
+}
+#drinks-menu .menu-item-image {
+    img {
+        border-radius: 15px;
+    }
+}
+
 /* Gallery Section */
 #gallery {
 	padding: 0;
@@ -378,20 +458,36 @@ header .intro-text {
 }
 /* Team Section */
 #team {
-	padding: 120px 0;
+	padding: 20px 0;
+	background-color: #473A38;
 }
-#team h2::after {
+#team .section-title{
+	text-align: center;
+}
+/* #team h2::after {
 	bottom: 0;
 	margin-left: 0;
 	left: 0;
-}
+} */
 #team img {
-	max-width: 550px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	width: 100%;
 }
 #team .team-img {
 	display: inline-block;
 	position: relative;
 }
+#team .menu-section-title {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color: #DBD5C9;
+	margin: 20px 0;
+	text-align: center;
+}
+
 /* Contact Section */
 #contact {
 	padding: 100px 0;
@@ -405,6 +501,8 @@ header .intro-text {
 	margin-top: 60px;
 	margin-bottom: 40px;
 }
+
+
 #contact form {
 	padding: 0;
 }
