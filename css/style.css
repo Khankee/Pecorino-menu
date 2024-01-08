@@ -266,7 +266,10 @@ header .intro-text {
 	margin: 0 20px;
 }
 #features img {
-	margin: 30px auto 20px;
+	width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 #features .about-img:before {
 	display: block;
@@ -386,10 +389,10 @@ header .intro-text {
 	background-color: #473A38;
 }
 #drinks-menu img {
-	/* width: 300px;
+	width: 300px;
     display: block;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
 }
 #drinks-menu h3 {
 	padding: 10px 0;
@@ -450,6 +453,12 @@ header .intro-text {
 }
 
 /* Gallery Section */
+#gallery img {
+	width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 #gallery {
 	padding: 0;
 }
