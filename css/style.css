@@ -496,6 +496,9 @@ header .intro-text {
 	margin: 20px 0;
 	text-align: center;
 }
+#team .halal-pic{
+	width: 50%;
+}
 
 /* Contact Section */
 #contact {
